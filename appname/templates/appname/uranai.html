@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+{% block body %}
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+  <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="title">相性占い</div>
+  <div id="main">
+    <form action="" method="get">
+      あなたの血液型:
+      <select name="your_blood">
+        <option value='0'>選択してください</option>
+        <option value='1'>A</option>
+        <option value='2'>B</option>
+        <option value='3'>O</option>
+        <option value='4'>AB</option>
+      </select>
+      <br>
+      あいての血液型:
+      <select name="his_blood">
+        <option value='0'>選択してください</option>
+        <option value='1'>A</option>
+        <option value='2'>B</option>
+        <option value='3'>O</option>
+        <option value='4'>AB</option>
+      </select>
+      <input type="submit" value="送信">
+    </form>
+  </div>
+</body>
+{% endblock %}
